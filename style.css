@@ -96,12 +96,14 @@ p img{
 }
 
 #btn__register{
-    border: 2px solid var(--almostblack);
+    border: 2px solid var(--mediumgrey);
     padding: 0.5rem;
     border-radius: 0.5em;
     margin-top: -0.5rem;
     
-
+}
+#btn__register:hover{
+    border: 2px solid var(--almostblack);
 }
 header a{
     text-decoration: none;
@@ -111,14 +113,17 @@ header a:hover{
     color: var(--almostblack);
     cursor: pointer;
 }
+header p:hover{
+    color: var(--almostblack);
+    cursor: pointer;
+}
 
 li{
     list-style: none;
     color:var(--mediumgrey);   
 }
 .features__container{
-    padding: 1rem;
-    padding-right: 0;
+    padding: 1rem 0 .4rem 0; 
     align-items: center;
     background: white;
     border-radius: 1em;
@@ -126,33 +131,50 @@ li{
     margin-top: 1rem;
     position: absolute;
     left:10vh;
-    padding-bottom: .4rem;
+    margin-right: none;
     transform: scaleY(0);
     
 }
+.features__container ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    padding-left: 1.5rem;   
+}
+
+
 
 .features__container.active{
     transform: scaleY(1);
 }
 
 
-.features__item{
+li.features__item{
     padding-bottom: 0.75rem;
+    padding-right: 0;
+    margin-right: 0;
+    
 }
 .ftr{
     padding-right:0.5rem ;
 }
 .company__container{
-    padding: 1rem;
-    padding-right: 0;
+    padding: 1rem 0 .4rem 0;   
     background: white;
     border-radius: 1em;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin-top: 1rem;
     position: absolute;
-    left:30vh;
-    /*padding-bottom: .5rem;*/
+    left:35vh;
     transform: scaleY(0);
+}
+.company__container ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 0;
 }
 .company__container.active{
     transform: scaleY(1);
@@ -519,23 +541,27 @@ li{
         box-shadow: none;
         margin-top: none;
         position: absolute;
-        margin-left: 1rem;
+        margin-right: .7rem;
         left:3vh; 
         gap:1rem;      
         transform: scaleY(0);                
     }
+   
     .features__container ul{
         padding-top: 1rem;
+        
+       
     }
     .features__container li{
         padding-bottom: 1rem;
+        margin-right: 0;
+        padding-right: 0;
     }
 
     #company.pad__top{
         padding-top: 10rem;
 
     }
-
     .company__container{
         padding: 0rem;
         align-items: center;
@@ -545,7 +571,7 @@ li{
         margin-top: none;
         position: absolute;
         left:3vh;
-        margin-left: 1rem;
+        margin-right: 1.5rem;
         transform: scaleY(0);                
     }
     .company__container ul{
