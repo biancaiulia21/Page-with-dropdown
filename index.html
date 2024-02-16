@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!--navbar section-->
+    <header class="navbar__container">
+      <div class="header__img">
+        <img src="./images/logo.svg" alt="">
+      </div>
+      
+      
+      
+        <div class="navbar__toggle" id="mobile__menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="navbar__menu">
+          <ul class="nav">
+            <li class="navbar__item" id="features">
+              <a href="/" class="navbar__links" target="_self">
+                <p class="head">Features
+                  <img src="./images/icon-arrow-down.svg" alt="" id="arrow1">
+                </p>
+                
+                <div class="features__container">
+                  <ul>
+                    <li class="features__item">
+                      <img src="./images/icon-todo.svg" alt="todo" class="ftr">
+                      Todo List
+                    </li>
+                    <li class="features__item">
+                      <img src="./images/icon-calendar.svg" alt="calendar" class="ftr">
+                      Calendar
+                    </li>
+                    <li class="features__item">
+                      <img src="./images/icon-reminders.svg" alt="reminders" class="ftr">
+                      Reminders
+                    </li>
+                    <li class="features__item">
+                      <img src="./images/icon-planning.svg" alt="panning" class="ftr">
+                      Planning
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li class="navbar__item" id="company">
+              <a href="/" class="navbar__links" target="_self">
+                <p class="head">Company
+                  <img src="./images/icon-arrow-down.svg" alt="" id="arrow2"></p>
+                
+                <div class="company__container">
+                  <ul>
+                    <li class="company__item">History</li>
+                    <li class="company__item">Our Team</li>
+                    <li class="company__item">Blog</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li class="navbar__item" id="carrers">
+              <a href="/" class="navbar__links" target="_blank">
+                Carrers
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a href="/" class="navbar__links" target="_blank">
+                About
+              </a>
+            </li>
+          </ul>
+          <div class="navbar__action">
+            <a href="/" class="button" >Login</a>
+            <a href="/" class="button" id="btn__register">Register</a>
+    
+          </div>
+        </div>
+      
+
+      
+
+    </header>
+    <!--navbar section ends-->
+    <!--main section-->
+    <div class="main__container">
+      <div class="hero">
+        <h1>Make <br>remote work</h1>
+        <p>Get your team in sync, no matter your location.<br> Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+        
+        <button>Learn more</button>
+        <div class="clients">
+          <img src="./images/client-databiz.svg" alt="databiz">
+          <img src="./images/client-audiophile.svg" alt="audiophile">
+          <img src="./images/client-meet.svg" alt="meet">
+          <img src="./images/client-maker.svg" alt="maker">
+        </div>
+      </div>
+      <div class="img__container">
+        <img id="img1" src="./images/image-hero-desktop.png" alt="hero_desktop">
+        <img id="img2" src="./images/image-hero-mobile.png" alt="hero_mobile">
+      </div>
+    </div>
+  </div>
+
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Bianca</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
